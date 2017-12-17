@@ -72,11 +72,11 @@ class Trader(threading.Thread):
             # always backtest first!
             
             
-    # def avg(self):
-    #     return sum(self.alpha**n.days * iq
-    # ...     for n, iq in map(lambda (day, iq), today=max(days): (today-day, iq),
-    # ...         sorted(zip(days, IQ), key=lambda p: p[0], reverse=True))
+     def avg(self):
+         return sum(self.alpha**n.days * iq
+     ...     for n, iq in map(lambda (day, iq), today=max(days): (today-day, iq),
+     ...         sorted(zip(days, IQ), key=lambda p: p[0], reverse=True))
 
-#if __name__ == '__main__':
+if __name__ == '__main__':
 
 t = Trader(api_key, api_secret)
